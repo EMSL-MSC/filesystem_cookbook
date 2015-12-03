@@ -45,7 +45,7 @@ attribute :mirrors, :kind_of => Fixnum
 
 # Mounting Options
 attribute :mount, :kind_of => String
-attribute :options, :kind_of => String, :default => "defaults"
+attribute :options, :kind_of => Array, :default => ["defaults"]
 # Mount directory options
 attribute :user, :kind_of => String
 attribute :group, :kind_of => String
